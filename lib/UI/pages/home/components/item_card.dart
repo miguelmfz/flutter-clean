@@ -15,7 +15,6 @@ class ItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final _currencyFormat = new NumberFormat("#,##0.00", "en_US");
 
     return GestureDetector(
@@ -37,15 +36,14 @@ class ItemCard extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: Settings.defaultPadding / 4),
+            padding: const EdgeInsets.symmetric(
+                vertical: Settings.defaultPadding / 4),
             child: Text(
               // products is out demo list
               product!.title!,
               overflow: TextOverflow.ellipsis,
               style: GoogleFonts.openSans(
-                  color: Settings.alternativeColor,
-                  fontSize: 12
-              ),
+                  color: Settings.alternativeColor, fontSize: 12),
             ),
           ),
           Text(
@@ -53,8 +51,7 @@ class ItemCard extends StatelessWidget {
             style: GoogleFonts.openSans(
                 color: Settings.alternativeColor,
                 fontWeight: FontWeight.bold,
-                fontSize: 13
-            ),
+                fontSize: 13),
           )
         ],
       ),

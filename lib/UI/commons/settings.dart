@@ -22,6 +22,8 @@ class Settings {
   static const alternativeColor = Colors.black54;
   static Color circleCountColor = Colors.deepOrangeAccent[200]!;
   static Color shoppingCartColor = Colors.white;
+  static const kTextColor = Color(0xFF535353);
+  static const kTextLightColor = Color(0xFFACACAC);
 
   // FontColors
   static Color fontCircleCountColor = Colors.white;
@@ -35,15 +37,15 @@ class Settings {
 
   // Styles
   static TextStyle circleCountStyle = GoogleFonts.nunito(
-      fontSize: Settings.fontSizeCircleCount,
-      color: Settings.fontCircleCountColor,
-      fontWeight: FontWeight.w600,
+    fontSize: Settings.fontSizeCircleCount,
+    color: Settings.fontCircleCountColor,
+    fontWeight: FontWeight.w600,
   );
 
   static TextStyle appBarHomeTitleStyle = GoogleFonts.nunito(
-      fontSize: Settings.fontSizeAppBarHomeTitle,
-      color: Settings.fontAppBarHomeTitleColor,
-      fontWeight: FontWeight.w600,
+    fontSize: Settings.fontSizeAppBarHomeTitle,
+    color: Settings.fontAppBarHomeTitleColor,
+    fontWeight: FontWeight.w600,
   );
 
   static const titleAppBarHome = "PandiStore V2";
